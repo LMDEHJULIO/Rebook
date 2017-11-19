@@ -1,5 +1,9 @@
 
 
 export function selectBook(book){
-  console.log('Book has been selected', book.title);
+  const BOOK_SELECTED = 'BOOK_SELECTED'
+  return {
+    type: BOOK_SELECTED,
+    payload: book
+  }
 }
